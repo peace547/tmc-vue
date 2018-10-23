@@ -1,13 +1,20 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+<template lang="pug">
+  <div style="height:100%">
+    <keep-alive include="PlaneSearch">
+      <router-view />
+    </keep-alive>
+    loading(:show="pageLoading")
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'app',
+  computed: {
+    pageLoading () {
+      return this.$store.state.loading
+    }
+  }
 }
 </script>
 
@@ -15,13 +22,12 @@ export default {
 @import '~vux/src/styles/reset.less';
 </style>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+  @import './assets/css/common.sass'
+
+  body, .weui-tab
+    background: #efefef
+
+  body
+    color: #333
 </style>

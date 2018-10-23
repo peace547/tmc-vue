@@ -1,0 +1,46 @@
+{
+  "data": {
+    "personData": [{
+      "id": "001",
+      "passengerName": "郎和萍",
+      "passengerPinyinFamilyName": "lang",
+      "passengerPinyinName": "heping",
+      "passengerBirthday": { "sec": "752860800"},
+      "passengerGender": "F",
+      "passengerMobile": "15726816232",
+      "passengerDocument": [
+        {
+          "passengerDocumentNumber": "330682199311100426",
+          "passengerDocumentType": "NI",
+          "passengerCardExpired": "2022-12-12"
+        }
+      ],
+      "passengerNationality": "中国",
+      "isDefault": 1
+    },{
+      "id": "002",
+      "passengerName": "沈益梦",
+      "passengerPinyinFamilyName": "shen",
+      "passengerPinyinName": "yimeng",
+      "passengerBirthday": {
+        "sec": "752863300"
+      },
+      "passengerGender": "F",
+      "passengerMobile": "15726816232",
+      "passengerDocument": [
+        {
+          "passengerDocumentNumber": "330682199311100425",
+          "passengerDocumentType": "NI",
+          "passengerCardExpired": "2022-12-12"
+        }
+      ],
+      "passengerNationality": "中国",
+      "isDefault": 0
+    }],
+    "user":[{
+      "username": "123",
+      "password": "123"
+    }]
+  },
+  "result": 1
+}
